@@ -23,7 +23,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/osgint@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/osgint@sha256:f8ac920b27139a5ad2001a448170bf6e94bf334f9780b884a450e7e8f4822051
   platforms: [linux/amd64, linux/arm64]
   command: ["python", "/opt/tool/osgint.py", "-u", "{username}", "--json"]
   output_format: text
